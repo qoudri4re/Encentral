@@ -5,16 +5,17 @@ body {
   background-color: #e5e5e5;
   height: 100vh;
   width: 90%;
-  /* display: flex; */
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
+
 body > .header {
   display: flex;
   width: 100%;
   height: 10%;
+  margin-top: 0.5%;
 }
 .header__left {
   height: 100%;
@@ -52,7 +53,7 @@ body > .header {
 .header__middle ul {
   list-style-type: none;
   display: flex;
-  gap: 10px;
+  gap: 8%;
   align-items: center;
   height: 100%;
 }
@@ -75,6 +76,7 @@ body > .header {
   align-items: center;
   color: #212353;
   font-family: "Avenir";
+  font-size: 0.9rem;
 }
 .content {
   /* background-color: green; */
@@ -112,10 +114,11 @@ body > .header {
   background-color: #9c69e2;
   color: #ffffff;
   border-radius: 50px;
-  height: 12%;
+  height: 15%;
   width: 25%;
   border: none;
   font-family: "Avenir";
+  font-size: 1.1rem;
 }
 .item1 .right img {
   width: 60%;
@@ -199,6 +202,7 @@ body > .header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 1%;
 }
 .features .feature1 {
   background-color: #68c9ba25;
@@ -219,10 +223,27 @@ body > .header {
   border-radius: 50px;
   position: relative;
 }
+.feature h3 {
+  font-family: "Helvetica";
+}
+.feature p {
+  font-family: "Avenir";
+}
+.feature .learn__more {
+  display: flex;
+  align-items: center;
+  width: 72%;
+  justify-content: space-between;
+}
+.feature .learn__more span {
+  font-weight: 800;
+  font-size: 1rem;
+  color: #212353;
+}
 .features .right .feature {
   width: 90%;
 }
-.features .feature img {
+.features .feature > img {
   position: absolute;
   left: -30%;
   top: 20%;
@@ -248,16 +269,18 @@ body > .header {
   width: 80%;
   height: 100%;
   border-radius: 40px;
+  position: relative;
 }
 .testimonials .top {
   width: 40%;
   height: 30%;
   display: flex;
   align-items: center;
-  margin-left: 5%;
+  margin-left: 8%;
   color: white;
   font-weight: 700;
   font-size: 1.5rem;
+  font-family: "Helvetica";
 }
 .testimonials .middle {
   height: 50%;
@@ -266,9 +289,9 @@ body > .header {
 .testimonial {
   background-color: white;
   box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
-  width: 50%;
+  width: 55%;
   height: 50%;
-  margin-left: 5%;
+  margin-left: 8%;
   border-radius: 20px;
   display: flex;
 }
@@ -280,6 +303,38 @@ body > .header {
   margin-top: 5%;
   display: flex;
   justify-content: center;
+  width: 25%;
+}
+.middle .outside__testimonial .left {
+  width: 32%;
+}
+.middle .middle__testimonial {
+  right: -4%;
+  width: 38%;
+}
+
+.middle .outside__testimonial {
+  height: 50%;
+  position: absolute;
+  border: 1px solid #9c69e2;
+  background: linear-gradient(
+    270deg,
+    #ffffff 9.75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.middle .far__right__testimonial .testimonial__text {
+  overflow: hidden;
+  margin-top: 8%;
+}
+.middle .far__right__testimonial .right {
+  margin-top: 12%;
+}
+.middle .far__right__testimonial .left {
+  width: 80%;
+}
+.middle .far__right__testimonial {
+  right: -30%;
   width: 25%;
 }
 .middle .left img {
@@ -294,6 +349,7 @@ body > .header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "Avenir";
 }
 .middle .right .name {
   margin-top: 2%;
@@ -304,13 +360,22 @@ body > .header {
 }
 .middle .right .name h3 {
   color: #212353;
+  letter-spacing: 0.005em;
+  font-size: 1.1rem;
 }
 .middle .right .name span {
   color: #9c69e2;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+.current__testimonial .testimonial__text {
+  margin-bottom: 5%;
 }
 .testimonial__text {
   color: #4b5d68;
   line-height: 1.4rem;
+  font-size: 1rem;
+  font-weight: 400;
 }
 .testimonials .bottom {
   height: 20%;
@@ -322,24 +387,24 @@ body > .header {
   display: flex;
   align-items: center;
   gap: 3%;
-  margin-left: 5%;
+  margin-left: 8%;
 }
 .bottom .right {
   width: 20%;
   display: flex;
   align-items: center;
-  margin-right: 2%;
+  justify-content: center;
 }
 .bottom .right .right__arrow {
   height: 100%;
-  width: 40%;
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .bottom .right .left__arrow {
   height: 100%;
-  width: 60%;
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -386,12 +451,14 @@ body > .header {
   font-size: 1.5rem;
   font-weight: 700;
   color: #212353;
+  font-family: "Helvetica";
 }
 
 .item5 .top .left p {
   color: #4b5d68;
   font-weight: 500;
   font-size: 1rem;
+  font-family: "Avenir";
 }
 .item5 .top .right {
   display: flex;
@@ -399,13 +466,18 @@ body > .header {
   gap: 8%;
   width: 30%;
 }
+.item5 .top .right button {
+  font-family: "Avenir";
+  font-weight: 900;
+}
 .item5 .top .right .learn__more {
   background-color: #f063b8;
   color: white;
   border-radius: 50px;
   border: none;
   height: 45%;
-  width: 40%;
+  width: 45%;
+  font-size: 0.9rem;
 }
 .item5 .top .right .demo__button {
   background-color: white;
@@ -426,6 +498,7 @@ body > .header {
   display: flex;
   height: 20%;
   align-items: center;
+  font-family: "Avenir";
 }
 .item5__header ul {
   display: flex;
@@ -452,10 +525,12 @@ body > .header {
 .item5__left h4 {
   margin-left: 2%;
   color: #212353;
+  font-size: 0.9rem;
+  font-weight: 900;
 }
 .item5__left .logo__cylinder {
   width: 3%;
-  height: 60%;
+  height: 50%;
   border-radius: 20px;
   background-color: #f063b8;
 }
@@ -472,6 +547,7 @@ body > .header {
 .item5__bottom {
   height: 50%;
   display: flex;
+  font-family: "Avenir";
 }
 .bottom__left {
   width: 40%;
@@ -504,7 +580,7 @@ body > .header {
 }
 .item5__bottom .listings ul {
   display: flex;
-  gap: 5%;
+  gap: 8%;
   height: 100%;
   flex-direction: column;
   color: #212353;
