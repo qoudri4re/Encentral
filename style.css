@@ -693,19 +693,21 @@ a {
 
 @media only screen and (max-width: 767px) {
   body {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
   }
   body > .header {
-    margin-top: 0;
-    margin-top: 1%;
+    margin-top: 2%;
+    width: 100%;
+    /* position: sticky;
+    top: 0;
+    z-index: 999; */
   }
   .header .disappear {
     display: none;
   }
   .header__left {
-    width: 18%;
-    justify-content: center;
+    width: 12%;
     gap: 6%;
   }
   .header__left .circle {
@@ -720,37 +722,51 @@ a {
   .item1 {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 110vh;
     margin-top: 5%;
   }
   .item1 .left {
     width: 100%;
-    height: 50%;
+    min-height: 45%;
+    height: fit-content;
   }
   .item1 .right img {
     position: relative;
-    width: 95%;
+    width: 100%;
     height: 100%;
     top: 0;
-    right: 0;
+    right: 2%;
   }
   .item1 .left h3 {
-    font-size: 3rem;
-    height: 20%;
+    font-size: 2.9rem;
+    margin: 0;
+    height: fit-content;
+  }
+  .item1 .left button {
+    height: 45px;
+    width: 140px;
+  }
+  .item1 .left p {
+    width: 100%;
+    font-size: 1.1rem;
+    margin-bottom: 2%;
   }
   .item2 {
     display: flex;
     flex-direction: column-reverse;
     height: 130vh;
+    width: 100%;
   }
   .item2 .left {
     width: 100%;
-    background-color: #212353;
     height: 50%;
   }
   .item2 .right {
     width: 100%;
     height: 50%;
+  }
+  .item2 .left img {
+    width: 90%;
   }
   .item3 {
     height: 250vh;
@@ -767,14 +783,25 @@ a {
     flex-direction: column;
     margin-top: 5%;
   }
+  .features .details {
+    width: 56%;
+  }
   .features .left,
   .features .right {
     width: 100%;
     height: 50%;
     justify-content: space-around;
   }
+  .features .left .feature,
   .features .right .feature {
-    width: 60%;
+    width: 70%;
+    min-width: 400px;
+  }
+  .features .feature > img {
+    width: 50%;
+    height: 60%;
+    left: -18%;
+    top: 25%;
   }
   .item4 .testimonials {
     width: 100%;
@@ -838,7 +865,6 @@ a {
   .item5__bottom .listings ul {
     gap: 3%;
     flex-direction: row;
-    width: 100%;
     align-items: center;
   }
   .item5__bottom .bottom__right__end {
@@ -872,7 +898,21 @@ a {
   .bottom__left .copyright {
     font-size: 0.9rem;
   }
-  .line__break {
-    bottom: -508%;
+  .item5 .top .left {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 664px) {
+  .item1 .left {
+    min-height: 50%;
+  }
+  .item5 .top .right .demo__button,
+  .item5 .top .right .learn__more {
+    width: 210px;
+    height: 45px;
+  }
+
+  .item5 .top .right {
+    width: 100%;
   }
 }
