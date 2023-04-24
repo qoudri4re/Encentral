@@ -22,7 +22,7 @@ body {
 .table__section,
 .form {
   width: 40%;
-  min-width: 400px;
+  min-width: 350px;
   height: 50%;
   margin: 0 auto;
   display: flex;
