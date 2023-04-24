@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "AvenirLTStd-Book";
+  src: url("/fonts/avenir/AvenirLTStd-Book.otf");
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/helvetica/Helvetica.ttf");
+}
+* {
+  margin: 0;
+}
+body {
+  background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+  font-family: "AvenirLTStd-Book", sans-serif;
+}
+.contents {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.table__section,
+.form {
+  width: 40%;
+  min-width: 400px;
+  height: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table__section {
+  height: fit-content;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: fit-content;
+}
+th,
+td {
+  border: 1px solid rgb(221, 221, 221);
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #9c69e2;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.05rem;
+}
+tr:nth-child(even) {
+  background-color: rgba(156, 105, 226, 0.1);
+}
+
+tbody tr {
+  height: 50px;
+}
+tr:hover {
+  background-color: #4b5d68;
+  color: white;
+}
+tr td:last-of-type .operations {
+  display: flex;
+  gap: 8%;
+  height: 30px;
+}
+tr td:last-of-type button {
+  height: 100%;
+  width: 40%;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  min-width: 50px;
+}
+.operations .edit {
+  background-color: rgb(156, 105, 226);
+}
+.operations .delete {
+  background-color: red;
+}
+.operations .edit:hover {
+  background-color: rgba(156, 105, 226, 0.4);
+}
+.operations .delete:hover {
+  opacity: 0.3;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(221, 221, 221);
+  height: 90%;
+  padding: 12px 0;
+  gap: 5px;
+  width: 90%;
+  border-radius: 8px;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  height: 15%;
+  gap: 10%;
+  width: 100%;
+}
+.input__container {
+  height: 25%;
+  width: 80%;
+  letter-spacing: 0.04rem;
+}
+.input__container input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+input {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 250px;
+}
+.button__container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+form button {
+  padding: 10px;
+  background-color: #9c69e2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 35%;
+  height: 90%;
+  letter-spacing: 0.04rem;
+}
+form button:hover {
+  background-color: #212353;
+}
+form button:disabled {
+  cursor: not-allowed;
+}
