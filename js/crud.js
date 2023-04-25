@@ -139,6 +139,7 @@ function addItem(e) {
   document.getElementById("item_id").disabled = false;
   addEventListenerToEditButtons();
   addEventListenerToDeleteButtons();
+  createButton.disabled = true;
 }
 
 function fetchFromLocalstorage() {
